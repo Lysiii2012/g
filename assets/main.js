@@ -68,7 +68,7 @@ const observerCallback = (entries, observer) => {
   });
 };
 
-const observer = new IntersectionObserver(observerCallback, { threshold: 0.1 });
+const observer = new IntersectionObserver(observerCallback, { threshold: 0.03 });
 
 sections.forEach((section, index) => {
   section.style.setProperty('--animation-delay', `${index * 0.1}s`);
